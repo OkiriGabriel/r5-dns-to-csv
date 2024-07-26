@@ -14,9 +14,9 @@ from botocore.exceptions import ClientError
 # Environment variables
 S3_BUCKET_NAME = os.environ.get('S3_BUCKET_NAME', 'par-dnsresolver')
 S3_ACCOUNTS_FILE_NAME = os.environ.get('S3_ACCOUNTS_FILE_NAME', 'account_list.json')
-MAIN_REGION = os.environ.get('AWS_REGION', 'us-east-1')
-MANAGEMENT_ACCOUNT_ID = '124159715533'
-LAMBDA_ACCOUNT_ID = '211125782569'
+MAIN_REGION = os.environ.get('AWS_REGION', 'us-west-2')
+MANAGEMENT_ACCOUNT_ID = 'xxxxxx'
+LAMBDA_ACCOUNT_ID = 'xxxxxxxx'
 
 Header = [
     "Account ID", "Region", "Record Name", "Record Type", "Value/Route Traffic To",
